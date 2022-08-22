@@ -1,0 +1,10 @@
+fonts:
+	- Parangon530C (regular)	
+	- PTSans (caption)
+	- Futura (normal)
+	- FuturaBT (bold)
+	- HelveticaNeueCyr (bold, roman)
+	- Tahoma (bold)
+	- Arial (bold, regular)
+	- Exo2 (bold)
+	- Myriad Pro (regular)
