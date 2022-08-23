@@ -58,7 +58,7 @@
 }
 
 /*заголовки*/
-h1.title{
+h1.title{ /*заголовок 1-го уровня*/
 	font-family: Parangon530CR;
 	color: #fff;
 	font-size: 64px;
@@ -66,8 +66,7 @@ h1.title{
 	text-align: center;
 	margin: 0 auto;
 }
-/*текст для заголовка 1-го уровня*/
-p.sub-title{
+p.sub-title{ /*текст для заголовка 1-го уровня*/
 	font-family: PTSansC;
 	color: #fff;
 	font-size: 28px;
@@ -75,6 +74,10 @@ p.sub-title{
 	text-align: center;
 	margin: 0 auto;
 	line-height: 1.7;
+}
+h2.title{ /*заголовок 1-го уровня*/
+	font-family: HelveticaNeueCyrB;
+	font-size: 48px;
 }
 
 /*задний фон + заливка*/
@@ -130,8 +133,7 @@ header .block::after{
 }
 
 /*действия с отдельными блоками*/
-/*----------------------------------------1 блок*/
-header .block:nth-child(1){
+header .block:nth-child(1){/*----------------------------------------1 блок*/
 	padding: 50px 50px 40px 50px;
 	position: relative;
 }
@@ -142,8 +144,7 @@ header .block:nth-child(1)::after{
 	left: 50%;
 	transform: translateX(25%); /*gj[*/
 }
-/*----------------------------------------2 блок*/
-header .block:nth-child(2){
+header .block:nth-child(2){/*----------------------------------------2 блок*/
 	padding: 50px 80px 40px 80px;
 	position: relative;
 }
@@ -154,8 +155,7 @@ header .block:nth-child(2)::after{
 	left: 50%;
 	transform: translateX(25%); /*gj[*/
 }
-/*----------------------------------------3 блок*/
-header .block:nth-child(3){
+header .block:nth-child(3){/*----------------------------------------3 блок*/
 	padding: 50px 20px 40px 20px;
 	position: relative;
 }
@@ -186,8 +186,10 @@ header p.text{
 	white-space: nowrap;
 }
 
+/*меню навигации*/
 header nav{
 	border-bottom: 2px solid rgba(0, 0, 0, .4);
+	margin-bottom: 200px;
 }
 header nav ul{
 	display: flex;
@@ -207,6 +209,29 @@ header nav ul li a{
 header nav ul li a:hover{
 	color: #f6ae48;
 }
+
+main .studio{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main .studio p.text{
+	display: inline-block;
+	font-family: PTSansC;
+	width: 60%;
+	font-size: 24px;
+	display: block;
+	position: relative;
+}
+main .studio span.text-back{
+	position: absolute;
+	top: -150px;
+	left: -100px;
+	font-family: TahomaB;
+	font-size: 350px;
+	color: rgba(0, 0, 0, .05);
+}
+
 
 @media (max-width: 1600px){
 
