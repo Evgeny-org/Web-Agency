@@ -75,9 +75,16 @@ p.sub-title{ /*текст для заголовка 1-го уровня*/
 	margin: 0 auto;
 	line-height: 1.7;
 }
-h2.title{ /*заголовок 1-го уровня*/
+h2.title{ /*заголовок 2-го уровня*/
 	font-family: HelveticaNeueCyrB;
 	font-size: 48px;
+}
+h3.title{ /*заголовок 3-го уровня*/
+
+}
+h4.title{ /*заголовок 4-го уровня*/
+	font-family: ArialB;
+	font-size: 28px;
 }
 
 /*задний фон + заливка*/
@@ -210,11 +217,14 @@ header nav ul li a:hover{
 	color: #f6ae48;
 }
 
+/*блок «студия»*/
 main .studio{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 200px;
 }
+/*контент блока*/
 main .studio p.text{
 	display: inline-block;
 	font-family: PTSansC;
@@ -232,6 +242,25 @@ main .studio span.text-back{
 	color: rgba(0, 0, 0, .05);
 }
 
+/*блок «функции»*/
+main .functions{
+	display: flex;
+	justify-content: space-between;
+}
+/*контент блока*/
+main .functions .block{
+	width: 30%;
+}
+main .functions .block img{
+	margin-bottom: 25px;
+}
+main .functions .block h4{
+	margin-bottom: 25px;
+}
+main .functions .block p.text{
+	font-family: ArialR;
+	font-size: 24px;
+}
 
 @media (max-width: 1600px){
 
