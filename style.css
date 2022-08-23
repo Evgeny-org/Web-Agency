@@ -52,8 +52,9 @@
 
 /*ограничитель*/
 .container{
-	margin: 0 auto;
+	max-width: 1600px;
 	padding: 0 50px;
+	margin: 0 auto;
 }
 
 /*заголовки*/
@@ -183,4 +184,30 @@ header p.text{
 	color: #fff;
 	font-size: 24px;
 	white-space: nowrap;
+}
+
+header nav{
+	border-bottom: 2px solid rgba(0, 0, 0, .4);
+}
+header nav ul{
+	display: flex;
+	justify-content: right;
+}
+header nav ul li{
+	list-style-type: none;
+	margin-left: 50px;
+	padding: 50px 0;
+}
+header nav ul li a{
+	text-decoration: none;
+	font-family: FuturaN;
+	font-size: 36px;
+	color: #000;
+}
+header nav ul li a:hover{
+	color: #f6ae48;
+}
+
+@media (max-width: 1600px){
+
 }
