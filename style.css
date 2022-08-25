@@ -297,6 +297,7 @@ main .development{
 	display: flex;
 	justify-content: center;
 	position: relative;
+	margin-bottom: 200px;
 }
 /*задний блок*/
 main .development .development-block{
@@ -314,6 +315,7 @@ main .development .development-block::before{
 	content: '';
 	position: relative;
 }
+/*контент заднего блока*/
 main .development .development-block img{
 	position: absolute;
 }
@@ -379,6 +381,7 @@ main .development .development-block p{
 	color: #fff;
 	font-size: 56px;
 }
+
 /*контент блока*/
 main .development .block{
 	position: relative;
@@ -461,11 +464,51 @@ main .development .block .info#info_2 .price_arrow .price span{
 main .development .block .info#info_3 .price_arrow .price span{
 	background-color: #66bf0d;
 }
-
 main .development .block .info .price_arrow img{
 	width: 35px;
 	height: 35px;
 	pointer-events: auto;
+}
+
+main .first-place{
+	display: flex;
+	/*justify-content: space-between;*/
+	align-items: center;
+}
+main .first-place .info{
+	width: 50%;
+}
+main .first-place .info h2{
+	font-family: Parangon530CR;
+	font-size: 38px;
+	position: relative;
+	margin-bottom: 50px;
+}
+main .first-place .info p.text-back{
+	font-family: TahomaB;
+	font-size: 84px;
+	position: absolute;
+	top: -35px;
+	left: -50px;
+	z-index: -1;
+	color: rgba(0, 0, 0, .1);
+}
+main .first-place .info p.text{
+	font-family: ArialR;
+	font-size: 24px;
+	line-height: 2;
+}
+main .first-place .imgs{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+main .first-place .imgs img{
+	width: 250px;
+	margin: 0 auto;
+}
+main .first-place .imgs img:first-child{
+	margin-bottom: 40px;
 }
 
 @media (max-width: 1600px){
