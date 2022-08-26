@@ -673,6 +673,7 @@ main .trade-in{
 	padding: 75px 0 50px 0;
 	position: relative;
 	z-index: -1;
+	margin-bottom: 150px;
 }
 main .trade-in::before{
 	content: '';
@@ -731,6 +732,47 @@ main .trade-in button{
 	left: 50%;
 	transform: translate(-50%,0);
 }
+
+/*блока «забота»*/
+main .care{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 175px;
+}
+/*контент блока*/
+main .care .info{
+	width: 40%;
+	padding-left: 15%;
+}
+main .care .info h2{
+	font-family: Parangon530CR;
+	font-size: 38px;
+	position: relative;
+	margin-bottom: 50px;
+}
+main .care .info p.text-back{
+	font-family: TahomaB;
+	font-size: 84px;
+	position: absolute;
+	top: -35px;
+	left: -50px;
+	z-index: -1;
+	color: rgba(0, 0, 0, .1);
+}
+main .care .info p.text{
+	font-family: ArialR;
+	font-size: 24px;
+	line-height: 2;
+}
+main .care .imgs{
+	width: 50%;
+}
+main .care .imgs img{
+	display: block;
+	margin: 0 auto;
+}
+
 
 
 @media (max-width: 1600px){
