@@ -80,7 +80,8 @@ h2.title{ /*заголовок 2-го уровня*/
 	font-size: 48px;
 }
 h3.title{ /*заголовок 3-го уровня*/
-
+	font-family: Parangon530CR;
+	font-size: 36px;
 }
 h4.title{ /*заголовок 4-го уровня*/
 	font-family: ArialB;
@@ -619,12 +620,12 @@ main .our-projects .blocks_up img:nth-child(6){
 /*блок «адаптив»*/
 main .adaptive{
 	display: flex;
-
+	margin-bottom: 175px;
 }
 /*контент блока*/
 main .adaptive .info{
 	width: 50%;
-	padding: 100px 5% 100px 10%;
+	padding: 150px 5% 0px 10%;
 }
 main .adaptive .info h2{
 	font-family: Parangon530CR;
@@ -653,7 +654,7 @@ main .adaptive .imgs{
 }
 main .adaptive .imgs img{
 	position: absolute;
-	bottom: 10%;
+	bottom: 0;
 }
 main .adaptive .imgs img:nth-child(1){
 	left: 5%;
@@ -664,6 +665,73 @@ main .adaptive .imgs img:nth-child(2){
 main .adaptive .imgs img:nth-child(3){
 	left: 70%;
 }
+
+/*блок «обмен»*/
+main .trade-in{
+	background: url(imgs/trade-in_bg.png) no-repeat;
+	background-size: cover;
+	padding: 75px 0 50px 0;
+	position: relative;
+	z-index: -1;
+}
+main .trade-in::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: -1;
+}
+/*контент блока*/
+main .trade-in h1.title{
+	font-family: HelveticaNeueCyrB;
+	margin-bottom: 100px;
+}
+main .trade-in .blocks{
+	max-width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+main .trade-in .blocks .block{
+	width: 30%;
+}
+main .trade-in .blocks .block .block_up{
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+}
+main .trade-in .blocks .block .block_up img{
+	margin-right: 25px;
+	height: 67px;
+}
+main .trade-in .blocks .block .block_up h3{
+	color: #fff;
+	white-space:  nowrap;
+}
+main .trade-in .blocks .block .block_down p.text{
+	font-family: ArialR;
+	color: #fff;
+	font-size: 24px;
+	line-height: 1.5;
+}
+main .trade-in button{
+	font-family: HelveticaNeueCyrB;
+	font-size: 28px;
+	color: #fff;
+	padding: 20px 25px;
+	background-color: #f6ae48;
+	border: 0;
+	border-radius:20px;
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
 
 @media (max-width: 1600px){
 
