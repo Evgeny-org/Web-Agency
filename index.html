@@ -7,7 +7,11 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
+	<div class="progress"></div>
+	<a href="#up" class="up">
+		<img src="imgs/studio_ico_left-arrow(up).png" alt="">
+	</a>
+	<header id="up">
 		<div class="bg">
 			<h1 class="title">
 				НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ ВАШ БИЗНЕС.
@@ -26,34 +30,43 @@
 					</p>
 				</div>
 				<div class="block">
-					<img src="imgs/header_ico_2.png" alt="">
-					<p class="number">
-						345
-					</p>
-					<p class="text">
-						проектов
-					</p>
+						<img src="imgs/header_ico_2.png" alt="">
+						<p class="number">
+							345
+						</p>
+						<p class="text">
+							проектов
+						</p>
 				</div>
 				<div class="block">
-					<img src="imgs/header_ico_3.png" alt="">
-					<p class="number">
-						218
-					</p>
-					<p class="text">
-						постоянных клиентов
-					</p>
+						<img src="imgs/header_ico_3.png" alt="">
+						<p class="number">
+							218
+						</p>
+						<p class="text">
+							постоянных клиентов
+						</p>
 				</div>
 			</div>
 		</div>
+		<hr id="a">
 		<nav>
-			<ul class="container">
+			<ul class="container" id="ul">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">О нас</a></li>
 				<li><a href="#">Услуги</a></li>
 				<li><a href="#">Наши работы</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
+			<div class="hamb" id="hamb">
+				<a href="#a">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+				</a>
+			</div>
 		</nav>
+		<div class="popup" id="popup"></div>
 	</header>
 	<main>
 		<div class="studio container">
@@ -311,6 +324,10 @@
 	<footer>
 	</footer>
 
-<script src="mouseover.js"></script>
+	<script src="visible.js"></script>
+	<script src="progress.js"></script>
+	<script src="anchor.js"></script>
+	<script src="burger.js"></script>
+	<script src="mouseover.js"></script>
 </body>
 </html>
