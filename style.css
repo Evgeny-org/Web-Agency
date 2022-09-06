@@ -879,7 +879,7 @@ main .contact form textarea{
 main .contact form .button{
 	display: flex;
 	justify-content: space-between;
-	align-items: start;
+	align-items: start;	
 }
 main .contact form .button p.text_button{
 	font-family: ArialR;
@@ -894,6 +894,7 @@ main .contact form .button button{
 	color: #fff;
 	border: 0;
 	border-radius: 15px;
+	cursor: pointer;
 }
 footer{
 	width: 100%;
