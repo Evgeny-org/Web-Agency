@@ -65,7 +65,7 @@
 a.up{
 	position: fixed;
 	transition: .5s ease;
-	bottom:  -10%;
+	bottom:  -15%;
 	right: 5%;
 	padding: 25px 30px;
 	border-radius: 25px;
@@ -569,8 +569,13 @@ main .our-projects .text span{
 	z-index: -1;
 }
 main .our-projects .blocks_up{
+	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 25px;
+	transition: .5s;
+	position: relative;
 }
+
 /*низ*/
 main .our-projects button{
 	font-family: Parangon530CR;
@@ -585,10 +590,8 @@ main .our-projects button{
 	left: 50%;
 	transform: translate(-50%, 0);
 }
-/*середина*/
-main .our-projects .blocks_up{
-	display: flex;
-	flex-wrap: wrap;
+main .our-projects .blocks_up img{
+	z-index: 1;
 }
 main .our-projects .blocks_up img:nth-child(1){
 	width: 50%;
@@ -603,6 +606,7 @@ main .our-projects .blocks_up img:nth-child(3){
 main .our-projects .blocks_up .nth-child_4{
 	width: 25%;
 	position: relative;
+	z-index: 1;
 }
 main .our-projects .blocks_up .nth-child_4::before{
 	content: '';
@@ -640,6 +644,19 @@ main .our-projects .blocks_up img:nth-child(5){
 	width: 25%;
 }
 main .our-projects .blocks_up img:nth-child(6){
+	width: 25%;
+}
+
+main .our-projects .blocks_up .block_1{
+	display: flex;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .5s;
+	z-index: 0;
+}
+main .our-projects .blocks_up .block_1 img{
 	width: 25%;
 }
 
@@ -739,6 +756,7 @@ main .trade-in .blocks .block .block_up h3{
 	color: #fff;
 	white-space:  nowrap;
 }
+
 main .trade-in .blocks .block .block_down p.text{
 	font-family: ArialR;
 	color: #fff;

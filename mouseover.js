@@ -1,6 +1,6 @@
 const info_1 = document.querySelector('#info_1')
 const info = window.getComputedStyle(info_1)
-console.log(info.opacity);
+// console.log(info.opacity)
 if (info.opacity==0) {
 	const block = document.querySelectorAll('main .development .block') //обращение ко всему элементу
 	const info_1 = document.querySelector('main .development .block #info_1') //обращение к id

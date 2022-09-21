@@ -17,4 +17,5 @@
 	$query = $DBH->prepare($SQL);//подготавливаем запрос
 
 	$query->execute($options);//отпралвяем запрос
+	header("Location: index.html");
 ?>
